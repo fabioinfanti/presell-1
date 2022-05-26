@@ -1,0 +1,1368 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;600&family=Roboto:wght@300;400;500;700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #3B4157;
+}
+
+a {
+    cursor: pointer;
+    color: #FF594E;
+    font-weight: 700;
+}
+
+.bg-lightgray {
+    background-color: #F5F5F5;
+    padding: 10px 0;
+}
+
+.topo-desktop {
+    display: flex;
+}
+
+.topo-mobile {
+    display: none;
+}
+
+.logo {
+    display: block;
+}
+
+.logo img {
+    width: 60%;
+}
+
+.buy-safe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buy-safe img {
+    max-width: 25px;
+}
+
+.buy-safe p {
+    font-size: 14px;
+    margin: 0 0 0 12px;
+    color: #989BA6;
+}
+
+.white-box {
+    background-color: white;
+    border: 1px solid #989BA6;
+    padding: 4px 12px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    max-width: 100%;
+    width: 190px;
+}
+
+.white-box img {
+    max-width: 28px;
+    margin: 0 12px 0 0;
+}
+
+.call-box-text {
+    font-size: 12px;
+    color: #989BA6;
+    margin: 0;
+}
+
+.call-box-number {
+    color: #989BA6;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0;
+    text-decoration: none;
+}
+
+.call-box-number:hover {
+    color: #989BA6;
+    text-decoration: none;
+}
+
+
+/* CONTDOWN */
+
+.bg-darkblue {
+    background-color: #3B4157;
+    padding: 12px;
+}
+
+.contdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contdown-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    margin: 0 12px 0 0;
+}
+
+.countdown-count-container {
+    display: flex;
+    align-items: center;
+}
+
+.digit-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.digit-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: white;
+    background-color: #FF594E;
+    padding: 4px;
+    margin: 0 6px;
+}
+
+.date-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* HEADER */
+
+.bg-image {
+    background-image: url(../image/bg-image.jpg);
+    background-size: cover;
+    padding: 80px 0 150px;
+    margin-bottom: -150px;
+}
+
+.header-subtitle {
+    color: #FF594E;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.header-title {
+    color: #3B4157;
+    font-size: 56px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 32px;
+}
+
+.br-mobile {
+    display: block;
+}
+
+.header-text {
+    font-size: 20px;
+    padding: 0 48px;
+    margin-bottom: 56px;
+    text-align: center;
+}
+
+
+/* MOCKUP */
+
+.header-mockup {
+    margin: 0 auto 32px;
+    display: block;
+}
+
+.dr-title {
+    font-size: 48px;
+    line-height: 1;
+    text-align: center;
+    font-weight: 700;
+}
+
+.dr-subtitle {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 300;
+}
+
+
+/* FAQ CSS */
+
+.bg-faq {
+    background-color: white;
+    padding: 40px 0;
+}
+
+#faq {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    text-align: center;
+    background-color: #fff;
+    margin: 0 auto 100px;
+}
+
+#faq .accordion button .accordion-title {
+    color: #3B4157;
+    padding-left: 36px;
+}
+
+.faq-desconto {
+    color: #FF594E;
+}
+
+#faq .accordion button .icon {
+    color: #FF594E;
+    border: 1px solid;
+    border-radius: 0;
+    border: none;
+    left: 0;
+}
+
+#faq .accordion .accordion-content p {
+    font-weight: 300;
+    margin: 17px 0;
+    color: #989BA6;
+}
+
+.lista-form {
+    color: white;
+}
+
+.form-lista {
+    font-size: 1rem;
+}
+
+.form-lista::marker {
+    color: #fff;
+}
+
+.accordion {
+    text-align: left;
+    transition: 0.4s ease-in-out;
+}
+
+.accordion-item {
+    border: 0px solid rgba(0, 0, 0, .125);
+}
+
+.accordion .accordion-item {
+    border-bottom: 1px solid #fff !important;
+}
+
+.accordion .accordion-item button[aria-expanded=true] {
+    border-bottom: 1px solid #FF594E;
+}
+
+.accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 12px 2em 12px 0;
+    color: #FF594E;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+    cursor: pointer;
+    color: #FF594E;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+    cursor: pointer;
+    color: #FF594E;
+    border: 1px solid #FF594E;
+}
+
+.accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+}
+
+.accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+}
+
+.accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+}
+
+.accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+}
+
+.accordion button[aria-expanded=true] {
+    color: #FF594E;
+}
+
+.accordion button[aria-expanded=true] .icon::after {
+    width: 0;
+}
+
+.accordion button[aria-expanded=true]+.accordion-content {
+    opacity: 1;
+    max-height: 30em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2em 0;
+    color: #FF594E;
+}
+
+.accordion .accordion-content p a {
+    color: #FF594E;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.accordion .accordion-content p .underline {
+    text-decoration: underline
+}
+
+.line-faq {
+    border-bottom: 5px solid #868A98;
+    width: 10%;
+    margin: 0 auto 64px;
+    display: block;
+}
+
+
+/* END FAQ CSS */
+
+@media only screen and (max-width: 991px) {
+    #faq .accordion button .accordion-title {
+        padding-left: 25px;
+    }
+    .accordion button {
+        font-size: 17px;
+    }
+    .accordion .accordion-content p {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #faq .accordion button .accordion-title {
+        padding-left: 25px;
+    }
+    .accordion button {
+        font-size: 17px;
+    }
+    .accordion .accordion-content p {
+        font-size: 15px;
+    }
+}
+
+
+/* CHECKOUT */
+
+.bg-gray {
+    background-color: #F5F5F5;
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.line {
+    border-bottom: 5px solid #868A98;
+    width: 10%;
+    margin: 24px auto 0;
+    display: block;
+}
+
+.container-checkout {
+    display: block;
+    margin: 64px auto 0;
+    padding: 0 40px;
+}
+
+.planos {
+    background-color: white;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.container-plano-anual {
+    display: block;
+    width: 90%;
+}
+
+.plano-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.plano-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.plano-description {
+    border-left: 1px solid #3B4157;
+    padding-left: 12px;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 20px 0 0;
+}
+
+.plano-description b {
+    font-weight: 700;
+}
+
+.plano-description span {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.form-check-input {
+    width: 1.5em;
+    height: 1.5em;
+    margin-top: 0.25em;
+    vertical-align: top;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid #3B4157;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 0;
+}
+
+.form-check-input:checked {
+    background-color: #3B4157;
+    border-color: #3B4157;
+}
+
+.btn-ckt {
+    padding: 24px 0;
+    display: block;
+    width: 65%;
+    text-transform: uppercase;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 auto;
+    background-color: #20AC4C;
+    border-radius: 18px;
+    text-align: center;
+    text-decoration: none;
+    transition: .4s ease-in-out;
+}
+
+.btn-ckt:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+    color: white;
+}
+
+
+/* HARVARD */
+
+.bg-darkblue2 {
+    background-color: #3B4157;
+    padding: 100px 0;
+}
+
+.container-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.harvard-text {
+    margin-left: 24px;
+}
+
+.text-title {
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1;
+}
+
+.text-subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    margin: 0;
+}
+
+.harvard-asterisco {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin: 0 auto;
+    width: 80%;
+    font-weight: 300;
+}
+
+
+/* CONHEÇA SEU MÉDICO */
+
+.bg-white {
+    background-color: white;
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.container-medico {
+    background-color: #F5F5F5;
+    padding: 40px;
+    margin: 64px auto;
+    border-radius: 18px;
+    width: 95%;
+}
+
+.medico-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.line2 {
+    border-bottom: 4px solid #3B4157;
+    width: 8%;
+    margin: 8px 0 18px;
+}
+
+.medico-subtitle {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.medico-imagem {
+    width: 95%;
+    margin: 24px auto;
+}
+
+.medico-bio {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 64px auto;
+    width: 80%;
+}
+
+.medico-bio b {
+    font-weight: 700;
+}
+
+.medico-faculdade {
+    display: block;
+}
+
+.medico-faculdade img {
+    width: 50%;
+}
+
+.dr-marcos {
+    position: absolute;
+    right: 5%;
+    bottom: -50%;
+    width: 32%;
+    display: block;
+}
+
+
+/* Text */
+
+.dr-text {
+    font-size: 20px;
+    margin: 40px auto 36px;
+}
+
+.dr-text span {
+    color: #FF594E;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.dr-marcos-mobile {
+    display: none;
+}
+
+
+/* FAQ 2 */
+
+.bg-white2 {
+    background-color: white;
+    padding: 100px 0 0;
+    overflow: hidden;
+}
+
+li {
+    font-weight: 300;
+    color: #989BA6;
+}
+
+
+/* Number */
+
+#numbers {
+    background: #3b4157;
+    padding: 3.25rem 3.75rem 1.5rem;
+    position: relative;
+}
+
+#numbers img {
+    left: 50%;
+    position: absolute;
+    top: 1.375rem;
+    transform: translate(-11.25rem);
+    z-index: 0;
+}
+
+#numbers h4 {
+    color: #ff7369;
+    font-size: 4.875rem;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1;
+}
+
+#numbers h4,
+#numbers p {
+    position: relative;
+    z-index: 1;
+}
+
+#numbers p {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5625rem;
+    max-width: 28.125rem;
+    text-align: center;
+}
+
+#numbers p span {
+    background-color: #ff7369;
+    font-size: 1.4375rem;
+    font-weight: 700;
+    padding: 0 0.3125rem;
+}
+
+
+/* Feedbacks */
+
+.swiper-desktop {
+    display: block;
+}
+
+.swiper-mobile {
+    display: none;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.box-feedback {
+    background-color: white;
+    box-shadow: 0 0 15px #00000026;
+    padding: 40px;
+    border-radius: 18px;
+    text-align: left;
+    width: 90%;
+    margin: auto;
+}
+
+.feedback-text {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+.feedback-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.nome {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+}
+
+.feedback-nota {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.estrelas {
+    width: 60%;
+    margin-right: 12px;
+}
+
+.cidade,
+.nota {
+    font-size: 16px;
+    color: #989BA6;
+    font-weight: 300;
+    line-height: 1;
+    margin: 0;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none!important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+    color: black;
+}
+
+@media (min-width: 1200px) {
+    #numbers p {
+        color: #fff;
+        font-size: 1.4375rem;
+        line-height: 2rem;
+        margin: 0 0 0 3.125rem;
+        max-width: 36.25rem;
+        text-align: left;
+    }
+    #numbers h4 {
+        font-size: 7.5rem;
+    }
+    #numbers img {
+        left: 50%;
+        top: 1.0625rem;
+        transform: translate(-34.375rem);
+        width: 9.375rem;
+    }
+    #numbers {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: 32px;
+    }
+}
+
+.bg-lightgray2 {
+    background-color: #F5F5F5;
+    padding: 100px 0;
+}
+
+.footer-text {
+    font-size: 11px;
+    color: #989BA6;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0 0;
+}
+
+.logo-footer {
+    width: 15%;
+    display: block;
+}
+
+.termos {
+    font-size: 11px;
+    color: #989BA6;
+    margin: 0;
+}
+
+.termos a {
+    color: #989BA6;
+    font-weight: 300;
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .logo img {
+        width: 80%;
+    }
+    .header-title {
+        font-size: 48px;
+    }
+    .br-mobile {
+        display: none;
+    }
+    .header-text {
+        font-size: 18px;
+    }
+    .header-mockup {
+        width: 80%;
+    }
+    .dr-title {
+        font-size: 36px;
+    }
+    .dr-subtitle {
+        font-size: 20px;
+    }
+    .bg-faq {
+        padding: 24px 0;
+    }
+    #faq {
+        width: 90%;
+        margin: 0 auto 64px;
+    }
+    .accordion button {
+        font-size: 18px;
+    }
+    .accordion button .icon {
+        top: 15px;
+    }
+    .bg-gray {
+        padding: 64px 0;
+    }
+    .line {
+        margin: 18px auto 0;
+    }
+    .form-check-input {
+        margin-left: 24px;
+    }
+    .bg-darkblue2 {
+        padding: 64px 0;
+    }
+    .text-title {
+        font-size: 18px;
+    }
+    .text-subtitle {
+        font-size: 14px;
+    }
+    .harvard-asterisco {
+        width: 100%;
+    }
+    .bg-white {
+        padding: 64px 0;
+    }
+    .container-medico {
+        margin: 64px auto 32px;
+    }
+    .medico-imagem {
+        margin: 12px auto;
+        width: 100%;
+    }
+    .medico-bio {
+        font-size: 20px;
+        width: 90%;
+    }
+    .dr-marcos {
+        bottom: -45%;
+        width: 30%;
+    }
+    .dr-text {
+        font-size: 18px;
+    }
+    .dr-text span {
+        font-size: 24px;
+    }
+    .bg-white2 {
+        padding: 64px 0 0;
+    }
+    .line-faq {
+        margin: 24px auto 64px;
+    }
+    .box-feedback {
+        padding: 32px;
+    }
+    .feedback-text {
+        font-size: 14px;
+    }
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+        left: -5px !important;
+        right: auto;
+    }
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 24px !important;
+    }
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        right: -5px !important;
+        left: auto;
+    }
+    .nome {
+        font-size: 16px;
+    }
+    .cidade,
+    .nota {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .topo-desktop {
+        display: none;
+    }
+    .topo-mobile {
+        display: flex;
+    }
+    .white-box {
+        margin: auto 0 0 auto;
+    }
+    .header-subtitle {
+        font-size: 28px;
+    }
+    .bg-image {
+        padding: 56px 0 130px;
+    }
+    .header-title {
+        font-size: 48px;
+    }
+    .header-text {
+        font-size: 18px;
+    }
+    .header-mockup {
+        width: 90%;
+    }
+    .dr-title {
+        font-size: 32px;
+    }
+    .dr-subtitle {
+        font-size: 20px;
+    }
+    #faq {
+        width: 100%;
+        margin: 0 auto 24px;
+    }
+    .accordion button .icon {
+        top: 13px;
+    }
+    .bg-gray {
+        padding: 64px 0;
+    }
+    .form-check-input {
+        margin-left: 18px;
+    }
+    .bg-darkblue2 {
+        background-color: #3B4157;
+        padding: 64px 0;
+    }
+    .harvard-text {
+        margin-left: 12px;
+    }
+    .text-title {
+        font-size: 18px;
+    }
+    .text-subtitle {
+        font-size: 14px;
+    }
+    .harvard-asterisco {
+        font-size: 12px;
+        width: 100%;
+    }
+    .bg-white {
+        padding: 64px 0;
+    }
+    .line {
+        width: 15%;
+    }
+    .container-medico {
+        padding: 32px;
+        width: 100%;
+    }
+    .medico-title {
+        font-size: 32px;
+    }
+    .line2 {
+        border-bottom: 3px solid #3B4157;
+        width: 10%;
+    }
+    .medico-subtitle {
+        font-size: 16px;
+    }
+    .medico-bio {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .dr-marcos {
+        display: none;
+    }
+    .dr-marcos-mobile {
+        display: block;
+        margin: 24px auto 0;
+    }
+    .dr-marcos-mobile img {
+        margin: auto;
+        display: block;
+    }
+    .medico-faculdade img {
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
+    .dr-text {
+        font-size: 18px;
+    }
+    .dr-text span {
+        font-size: 22px;
+    }
+    .bg-white2 {
+        padding: 64px 0 0;
+    }
+    .line-faq {
+        border-bottom: 4px solid #868A98;
+        width: 14%;
+        margin: 24px auto 40px;
+    }
+    #numbers h4 {
+        font-size: 72px;
+    }
+    #numbers p {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+    #numbers p span {
+        font-size: 20px;
+    }
+    .swiper-desktop {
+        display: none;
+    }
+    .swiper-mobile {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .topo-desktop {
+        display: none;
+    }
+    .topo-mobile {
+        display: flex;
+    }
+    .white-box {
+        margin: auto 0 0 auto;
+    }
+    .header-subtitle {
+        font-size: 28px;
+    }
+    .bg-image {
+        padding: 56px 0 130px;
+    }
+    .header-title {
+        font-size: 48px;
+    }
+    .header-text {
+        font-size: 18px;
+    }
+    .header-mockup {
+        width: 90%;
+    }
+    .dr-title {
+        font-size: 32px;
+    }
+    .dr-subtitle {
+        font-size: 20px;
+    }
+    #faq {
+        width: 100%;
+        margin: 0 auto 24px;
+    }
+    .accordion button .icon {
+        top: 13px;
+    }
+    .bg-gray {
+        padding: 64px 0;
+    }
+    .form-check-input {
+        margin-left: 18px;
+    }
+    .bg-darkblue2 {
+        background-color: #3B4157;
+        padding: 64px 0;
+    }
+    .harvard-text {
+        margin-left: 12px;
+    }
+    .text-title {
+        font-size: 18px;
+    }
+    .text-subtitle {
+        font-size: 14px;
+    }
+    .harvard-asterisco {
+        font-size: 12px;
+        width: 100%;
+    }
+    .bg-white {
+        padding: 64px 0;
+    }
+    .line {
+        width: 15%;
+    }
+    .container-medico {
+        padding: 32px;
+        width: 100%;
+    }
+    .medico-title {
+        font-size: 32px;
+    }
+    .line2 {
+        border-bottom: 3px solid #3B4157;
+        width: 10%;
+    }
+    .medico-subtitle {
+        font-size: 16px;
+    }
+    .medico-bio {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .dr-marcos {
+        display: none;
+    }
+    .dr-marcos-mobile {
+        display: block;
+        margin: 24px auto 0;
+    }
+    .dr-marcos-mobile img {
+        margin: auto;
+        display: block;
+    }
+    .medico-faculdade img {
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
+    .dr-text {
+        font-size: 18px;
+    }
+    .dr-text span {
+        font-size: 22px;
+    }
+    .bg-white2 {
+        padding: 64px 0 0;
+    }
+    .line-faq {
+        border-bottom: 4px solid #868A98;
+        width: 14%;
+        margin: 24px auto 40px;
+    }
+    #numbers h4 {
+        font-size: 72px;
+    }
+    #numbers p {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+    #numbers p span {
+        font-size: 20px;
+    }
+    .swiper-desktop {
+        display: none;
+    }
+    .swiper-mobile {
+        display: block;
+    }
+    .bg-lightgray2 {
+        margin: 64px 0 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .logo img {
+        width: 90%;
+    }
+    .contdown-title {
+        font-size: 14px;
+    }
+    .digit-count {
+        font-size: 24px;
+    }
+    .date-text {
+        font-size: 11px;
+    }
+    .bg-image {
+        padding: 56px 24px 130px;
+    }
+    .header-subtitle {
+        font-size: 24px;
+    }
+    .header-title {
+        font-size: 36px;
+    }
+    .header-text {
+        font-size: 16px;
+        padding: 0;
+    }
+    .dr-subtitle {
+        font-size: 16px;
+    }
+    .bg-faq {
+        padding: 40px 24px;
+    }
+    .harvard-text {
+        margin: 24px auto;
+        text-align: center;
+    }
+    .container-flex {
+        display: block;
+        margin: 0 auto 24px;
+    }
+    .container-flex img {
+        margin: auto;
+        display: block;
+    }
+    .container-medico {
+        margin: 48px auto;
+    }
+    .medico-title {
+        font-size: 28px;
+    }
+    .medico-bio {
+        font-size: 18px;
+    }
+    .bg-white {
+        padding: 64px 24px;
+    }
+    .dr-title {
+        font-size: 28px;
+    }
+    .dr-text {
+        font-size: 16px;
+    }
+    .dr-text span {
+        font-size: 20px;
+    }
+    .bg-gray {
+        padding: 64px 24px;
+    }
+    .line-faq {
+        margin: 16px auto 32px;
+    }
+    .bg-white2 {
+        padding: 48px 24px 0;
+    }
+    #numbers p {
+        font-size: 16px;
+    }
+    .line {
+        margin: 12px auto 0;
+    }
+    .container-checkout {
+        margin: 48px auto 0;
+    }
+    .plano-subtitle {
+        font-size: 14px;
+    }
+    .plano-title {
+        font-size: 23px;
+    }
+    .container-plano-anual {
+        width: 100%;
+    }
+    .plano-description {
+        font-size: 16px;
+    }
+    .planos {
+        padding: 32px;
+    }
+    .btn-ckt {
+        width: 100%;
+    }
+    .footer-container {
+        display: block;
+    }
+    .logo-footer {
+        width: 40%;
+        margin: 24px auto;
+    }
+    .termos {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 325px) {}
