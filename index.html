@@ -127,6 +127,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-10 col-xl-9">
+                    <h1 class="faq-title">O que você recebe:</h1>
                     <div id="faq">
                         <div class="accordion">
                             <div class="accordion-item"> <button id="accordion-button-1" aria-expanded="false"><span
@@ -222,25 +223,28 @@
                     <h4 class="dr-title">Selecione o seu plano</h4>
                     <div class="line"></div>
 
-                    <div class="container-checkout">
-                        <div class="planos">
+                    <div class="container-checkout" id="inputContainer">
+                        <div class="planos" id="plano-anual">
                             <div class="container-plano-anual">
                                 <h4 class="plano-title">Plano Anual</h4>
                                 <h5 class="plano-subtitle">(12 edições por apenas <b>R$ 33,30/mês</b>)</h5>
                                 <p class="plano-description">Quero receber a 1 vez ao mês os relatórios do Protocolo Homem de Alta Performance do Dr. Marcos Fortunato e ganhar meus <span>bônus
                                         gratuitos!</span></p>
                             </div>
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" onclick="OnChange($(this).attr('id'))">
                         </div>
-                        <div class="planos">
+                        <div class="planos" id="desconto-senior">
                             <div class="container-plano-anual">
                                 <h4 class="plano-title">DESCONTO SÊNIOR!</h4>
                                 <h5 class="plano-subtitle">(12 edições por apenas <b>R$ 16,65/mês</b>)</h5>
                                 <p class="plano-description"><b>Tenho mais de 60 anos e quero economizar 50%</b> recebendo 1 vez ao mês os relatórios do Protocolo Homem de Alta Performance do Dr. Marcos Fortunato e ganhar meus <span>bônus gratuitos!</span></p>
                             </div>
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" onclick="OnChange($(this).attr('id'))">
+
                         </div>
-                        <a href="#" class="btn-ckt">COMPRAR AGORA!</a>
+                        <a href="https://info.doutornature.com/sfunnel/5815/" class="btn-ckt1 hide">COMPRAR AGORA!</a>
+                        <a href="https://info.doutornature.com/sfunnel/5810/" class="btn-ckt2 hide">COMPRAR AGORA!</a>
 
                     </div>
                 </div>
@@ -445,25 +449,26 @@
                     <h4 class="dr-title">Selecione o seu plano</h4>
                     <div class="line"></div>
 
-                    <div class="container-checkout">
-                        <div class="planos">
+                    <div class="container-checkout" id="inputContainer2">
+                        <div class="planos" id="planos">
                             <div class="container-plano-anual">
                                 <h4 class="plano-title">Plano Anual</h4>
                                 <h5 class="plano-subtitle">(12 edições por apenas <b>R$33,30/mês</b>)</h5>
                                 <p class="plano-description">Quero receber a 1 vez ao mês os relatórios do Protocolo Homem de Alta Performance do Dr. Marcos Fortunato e ganhar meus <span>bônus
                                         gratuitos!</span></p>
                             </div>
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" onclick="OnChange2($(this).attr('id'))">
                         </div>
-                        <div class="planos">
+                        <div class="planos" id="planos">
                             <div class="container-plano-anual">
                                 <h4 class="plano-title">DESCONTO SÊNIOR!</h4>
                                 <h5 class="plano-subtitle">(12 edições por apenas <b>R$16,65/mês</b>)</h5>
                                 <p class="plano-description"><b>Tenho mais de 60 anos e quero economizar 50%</b> recebendo 1 vez ao mês os relatórios do Protocolo Homem de Alta Performance do Dr. Marcos Fortunato e ganhar meus <span>bônus gratuitos!</span></p>
                             </div>
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" onclick="OnChange2($(this).attr('id'))">
                         </div>
-                        <a href="#" class="btn-ckt">COMPRAR AGORA!</a>
+                        <a href="https://info.doutornature.com/sfunnel/5815/" class="btn-ckt3 hide">COMPRAR AGORA!</a>
+                        <a href="https://info.doutornature.com/sfunnel/5810/" class="btn-ckt4 hide">COMPRAR AGORA!</a>
                     </div>
                 </div>
             </div>
@@ -750,5 +755,59 @@
         }
     });
 </script>
+
+<script>
+    var inputButtons = new Array();
+    $('#inputContainer input:radio').each(function(index) {
+        inputButtons[index] = $(this);
+    });
+
+    var inputButtons2 = new Array();
+    $('#inputContainer2 input:radio').each(function(index) {
+        inputButtons2[index] = $(this);
+    });
+
+    /*
+    $('#flexRadioDefault1').change(function() {
+        if ($(this).is(":checked")) {
+            $(this).parent().addClass("planos-ativos");
+            $('a.btn-ckt').removeClass("hide");
+        } else {
+            console.log('não tá checado');
+            $(this).parent().removeClass("planos-ativos");
+            $('a.btn-ckt').addClass("hide")
+        }
+    });
+    */
+
+    function OnChange(id) {
+
+        var buttonIndex = id.split("flexRadioDefault").pop();
+
+        for (var i = 0; i < inputButtons.length; i++) {
+            inputButtons[i].parent().removeClass("planos-ativos");
+            $('a.btn-ckt1').addClass("hide");
+            $('a.btn-ckt2').addClass("hide");
+        }
+
+        inputButtons[buttonIndex - 1].parent().addClass("planos-ativos");
+        $('a.btn-ckt' + buttonIndex).removeClass("hide");
+    }
+
+    function OnChange2(id) {
+        var buttonIndex2 = id.split("flexRadioDefault").pop();
+
+        for (var i = 0; i < inputButtons2.length; i++) {
+            inputButtons2[i].parent().removeClass("planos-ativos");
+            $('a.btn-ckt3').addClass("hide");
+            $('a.btn-ckt4').addClass("hide");
+        }
+
+        inputButtons2[buttonIndex2 - 3].parent().addClass("planos-ativos");
+        $('a.btn-ckt' + buttonIndex2).removeClass("hide");
+    }
+</script>
+
+
 
 </html>

@@ -198,6 +198,14 @@ a {
 
 /* FAQ CSS */
 
+.faq-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #FF594E;
+    margin-bottom: 24px;
+}
+
 .bg-faq {
     background-color: white;
     padding: 40px 0;
@@ -439,6 +447,10 @@ a {
     margin-bottom: 40px;
 }
 
+.planos-ativos {
+    border: 5px solid #FF594E;
+}
+
 .container-plano-anual {
     display: block;
     width: 90%;
@@ -496,7 +508,7 @@ a {
     border-color: #3B4157;
 }
 
-.btn-ckt {
+.btn-ckt1 {
     padding: 24px 0;
     display: block;
     width: 65%;
@@ -512,10 +524,80 @@ a {
     transition: .4s ease-in-out;
 }
 
-.btn-ckt:hover {
+.btn-ckt2 {
+    padding: 24px 0;
+    display: block;
+    width: 65%;
+    text-transform: uppercase;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 auto;
+    background-color: #20AC4C;
+    border-radius: 18px;
+    text-align: center;
+    text-decoration: none;
+    transition: .4s ease-in-out;
+}
+
+.btn-ckt3 {
+    padding: 24px 0;
+    display: block;
+    width: 65%;
+    text-transform: uppercase;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 auto;
+    background-color: #20AC4C;
+    border-radius: 18px;
+    text-align: center;
+    text-decoration: none;
+    transition: .4s ease-in-out;
+}
+
+.btn-ckt4 {
+    padding: 24px 0;
+    display: block;
+    width: 65%;
+    text-transform: uppercase;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 auto;
+    background-color: #20AC4C;
+    border-radius: 18px;
+    text-align: center;
+    text-decoration: none;
+    transition: .4s ease-in-out;
+}
+
+.btn-ckt1:hover {
     transform: scale(1.1);
     text-decoration: none;
     color: white;
+}
+
+.btn-ckt2:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+    color: white;
+}
+
+.btn-ckt3:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+    color: white;
+}
+
+.btn-ckt4:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+    color: white;
+}
+
+.hide {
+    display: none;
 }
 
 
@@ -1269,13 +1351,19 @@ li {
     }
     .header-title {
         font-size: 36px;
+        line-height: 1.3;
     }
     .header-text {
-        font-size: 16px;
+        font-size: 18px;
         padding: 0;
     }
     .dr-subtitle {
-        font-size: 16px;
+        font-size: 18px;
+    }
+    .faq-title {
+        text-align: left;
+        font-size: 26px;
+        margin-bottom: 12px;
     }
     .bg-faq {
         padding: 40px 24px;
@@ -1330,6 +1418,7 @@ li {
     }
     .container-checkout {
         margin: 48px auto 0;
+        padding: 0px;
     }
     .plano-subtitle {
         font-size: 14px;
@@ -1338,13 +1427,16 @@ li {
         font-size: 23px;
     }
     .container-plano-anual {
-        width: 100%;
+        width: 90%;
     }
     .plano-description {
-        font-size: 16px;
+        font-size: 14px;
     }
     .planos {
         padding: 32px;
+    }
+    .form-check-input {
+        margin-left: 14px;
     }
     .btn-ckt {
         width: 100%;
@@ -1360,6 +1452,39 @@ li {
         text-align: center;
         width: 80%;
         margin: auto;
+    }
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        right: -25px;
+        left: auto;
+    }
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 24px;
+    }
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+        left: -25px;
+        right: auto;
+    }
+    .box-feedback {
+        padding: 24px;
+        border-radius: 12px;
+        width: 95%;
+    }
+    .swiper {
+        overflow: visible;
+    }
+    .feedback-text {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+    .cidade,
+    .nota {
+        line-height: normal;
+    }
+    .bg-lightgray2 {
+        padding: 64px 24px;
     }
 }
 
